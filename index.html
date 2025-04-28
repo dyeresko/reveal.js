@@ -2,19 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-
-    <title>reveal.js</title>
-
-    <link rel="stylesheet" href="dist/reset.css" />
-    <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/dracula.css" />
-
-    <!-- Theme used for syntax highlighted code -->
-    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <title>Reveal.js Presentation</title>
+    <link rel="stylesheet" href="./reveal.css" />
+    <link rel="stylesheet" href="./theme/dracula.css" />
   </head>
   <body>
     <div class="reveal">
@@ -256,28 +246,13 @@
         </section>
         <section>
           <h2>Conclusion</h2>
-          <aside class="notes">
-            This concludes my presentation. Thank you for your attention! If you
-            have any questions, I will be happy to answer them. I will also be
-            glad to hear feedback on the presentation. Bye!
-          </aside>
         </section>
       </div>
     </div>
-
-    <script src="dist/reveal.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
+    <script src="./reveal.js"></script>
     <script>
-      // More info about initialization & config:
-      // - https://revealjs.com/initialization/
-      // - https://revealjs.com/config/
-      Reveal.initialize({
-        hash: true,
-
-        // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      document.addEventListener("DOMContentLoaded", function () {
+        Reveal.initialize();
       });
     </script>
   </body>
